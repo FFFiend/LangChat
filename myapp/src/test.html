@@ -1,0 +1,26 @@
+<!DOCTYPE html> 
+<html>
+
+<h1> welcome to the bare bones web browser. Do not expect any formatting or fancy REACT, CSS work for now.</h1>
+<label for = "first_search_box">Search box</label>
+<input type="text", id="first_search_box", name="search" placeholder = "Type your query here:">
+<button onclick="get_query()">
+    <h1> Search. </h1>
+</button>
+<script>
+    // page redirector. 
+
+    // TODO: if this is a link, look up the link
+    // if not, then just redirect to search page template with
+    // autofilled suggestions from an LLM. 
+    function get_query(){
+    let val = document.getElementById("first_search_box").value
+    if (val != ""){
+        alert(val)
+    }
+    if (val.toLowerCase() == "w3schools"){
+        window.location.href = "https://www.w3docs.com"
+    }
+}
+</script>
+</html>
