@@ -1,12 +1,32 @@
 <!DOCTYPE html> 
 <html>
-
+<center>
 <h1> welcome to the bare bones web browser. Do not expect any formatting or fancy REACT, CSS work for now.</h1>
+</center>
+
+<div style= "position:relative; top:50px; left: 550px">
 <label for = "first_search_box">Search box</label>
-<input type="text", id="first_search_box", name="search" placeholder = "Type your query here:">
-<button onclick="get_query()">
-    <h1> Search. </h1>
+<input type="text", id="first_search_box", name="search" placeholder = "Type your query here    ">
+
+
+<button style="height:30px; width: 80px" onclick="get_query()">
+    <h1 style="font-size: small"> Search. </h1>
 </button>
+</div>
+
+<div style = "position:relative; left:10px; top:400px">
+<form>
+    <label for="username">Username</label><br>
+    <input type="text" id="username" name="username"><br>
+    <label for="pwd">Password</label><br>
+    <input type="password" id="pwd" name="pwd"><br><br>
+    <button style="height:40px; width:60px" onclick="login_redirect()">
+        <h1 style="font-size: small">Login</h1>
+    </button><br>
+    <a href="register.html">Not an existing user? Click here to register</a>
+
+</form>
+</div>
 <script>
     // page redirector. 
 
